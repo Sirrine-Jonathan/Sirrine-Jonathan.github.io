@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { NavLink } from '$lib';
 	import { onNavigate } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	onNavigate((navigation) => {
 		if ('startViewTransition' in document && !document.startViewTransition) return;
@@ -18,8 +19,8 @@
 
 <header>
 	<nav>
-		<NavLink href="/">Home</NavLink>
-		<NavLink href="/snippets">Snippets</NavLink>
+		<NavLink href={base}>Home</NavLink>
+		<NavLink href={`${base}/snippets`}>Snippets</NavLink>
 	</nav>
 </header>
 <main>
