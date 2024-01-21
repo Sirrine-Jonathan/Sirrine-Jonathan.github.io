@@ -1,0 +1,7 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--light);
+  background: var(--dark);
+  font-family: 'Quicksand', sans-serif;
+}
